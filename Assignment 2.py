@@ -35,18 +35,190 @@ Create pattern using for or while loop
 
 """""
 
-# for i in range(0,5):
-#     for j in range (0,5):
-#         print("*",end="  ")
-#     print("")
+###1
 
-for i in range(0,5):
-     for j in range(0,5):
-        print(i%2,end="  ")
+"""
+for i in range(5):
+    for j in range (5):
+        print("*",end=" ")
+    print()
+"""
+
+###2
+"""
+for i in range (1,6):
+    for j in range (5):
+        print(int(i/i),end='  ')
+    print()
+"""
+
+###3
+
+"""
+for i in range (5):
+    for j in range (5):
+        print(i%2, end ="  ")
+    print()
+    
+"""
+
+###4
+
+"""
+for i in range (6):
+    for j in range(i):
+        if ( i==1 or i==3 or i==5):
+            print(j%2,end=" ")
+        if (i==2 or i==4):
+            print((j+1)%2,end=" ")
+        # if i==3:
+        #     print(j%2,end=" ")
+        # if i==4:
+        #     print((j+1)%2,end=" ")
+        # if i==5:
+        #     print(j%2,end= " ")
+    print()
+
+"""
+
+###5
+"""
+for i in range (6):
+    for j in range(1,i+1):
+        print( j%2 ,end=" " )
+
+    print()
+"""
+
+###6
+
+"""
+for i in range(5):
+    for j in range(1,6):
+        print(j,end =" ")
+    print()
+"""
+
+###7(not getting 0 before single digit number)
+
+"""
+for i in range(1,6):
+    for j in range(1,6):
+        if i==1:
+            print("0"+str(int(j)),end="  ")
+        elif i==2:
+            print(j+5,end="  ")
+        elif i==3:
+            print(j+10,end=" ")
+        elif i==4:
+            print(j+15,end=' ')
+        elif i==5:
+            print(j+20,end=" ")
+
+    print()
+"""
+
+###8
+
+"""
+for i in range(5):
+    for j in range(5-i):
+        if (i==0 or i==2 or i==4):
+            print(j%2,end=" ")
+        elif (i==1 or i==3):
+            print((j+1)%2,end=" ")
+        # if i==2:
+        #     print(j%2,end=" ")
+        # elif i==3:
+        #     print((j+1)%2,end=" ")
+        # if i==4:
+        #     print(j%2,end=" ")
+        # else:
+        #     print("*",end=" ")
+    print()
+
+    print(end="")
+"""
+
+
+###9
+
+"""
+for i in range(4):
+    for j in range(7):
+        if ((i==0 and j==3) or (i==1 and (j==2 or j==4)) or (i==2 and (j%2==1 )) or ( i==3 and (j%2==0))     ):
+            print("1",end=" ")
+        else:
+            print(" ", end=" ")
+
+
+    print()
+
+"""
 
 
 
-     print("")
+###10(not getting proper output)
+
+"""
+for i in range(5):
+    for j in range(5):
+        if (j==0 or j==4):
+            print("*",end="")
+        else:
+            print("" ,end=" ")
+        if (j==1 and(i<=1)):
+            print("*",end="")
+        else:
+            print("" ,end=" ")
+
+        if  ((j==3)and (i<=1)):
+            print("*", end="")
+        else:
+            print("" ,end=" ")
+        if (i==2 and j==2):
+            print("*",end="")
+        else:
+            print("" ,end=" ")
+
+    print()
+
+"""
+
+"""
+for i in range(5):
+    for j in range(5):
+        if ((j==0 or j==4)or (j==1 and(i<=1))or ((j==3)and (i<=1))or (i==2 and j==2)):
+            print("*",end="")
+        else:
+            print("" ,end=" ")
+    print()
+"""
+
+###11(not getting output)
+
+"""
+for i in range(1,7):
+    for j in range(1,6):
+        if i==1:
+            print(j,end=" ")
+        if i==3:
+            print(j*2,end=" ")
+        if i==5:
+            print(j*3,end=" ")
+        if i==2:
+            print()
 
 
+    print()
 
+
+"""
+
+
+###12
+
+for i in range(1,7):
+    for j in range(1,i+1):
+        print(2**j,end=" ")
+    print()
