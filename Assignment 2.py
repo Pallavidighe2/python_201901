@@ -23,11 +23,11 @@ Create pattern using for or while loop
 1   1   1   1       *       *       10 08 06 04 02      2 4 8 16
                     *       *       03 06 09 12 15      2 4 8 16 32
                                     15 12 09 06 03      2 4 8 16 32 64
-13) *       *
-    * *   * *
-    *   *   *
-    *       *
-    *       *
+13) *       *       14) 1 1 1 1 1 
+    * *   * *              1 1 1 1 
+    *   *   *                 1 1 1  
+    *       *                   1 1
+    *       *                      1     
 1) Create a Matrix
 2) Matrix Multiplication
 3) Spiral Matrix rotation
@@ -80,6 +80,16 @@ for i in range (6):
     print()
 
 """
+"""
+number=0
+for i in range(0,5):
+    for j in range(0,i+1):
+        print(number%2,end=" ")
+        number +=1
+    if i%2 == 1:
+        number +=1
+    print("")
+"""
 
 ###5
 """
@@ -102,22 +112,25 @@ for i in range(5):
 ###7(not getting 0 before single digit number)
 
 """
+number = 0
 for i in range(1,6):
     for j in range(1,6):
-        if i==1:
-            print("0"+str(int(j)),end="  ")
-        elif i==2:
-            print(j+5,end="  ")
-        elif i==3:
-            print(j+10,end=" ")
-        elif i==4:
-            print(j+15,end=' ')
-        elif i==5:
-            print(j+20,end=" ")
+        print("{0:02d}".format(number), end="  ")
+        number +=1
+        # if i==1:
+        #
+        # elif i==2:
+        #     print(j+5,end="  ")
+        # elif i==3:
+        #     print(j+10,end=" ")
+        # elif i==4:
+        #     print(j+15,end=' ')
+        # elif i==5:
+        #     print(j+20,end=" ")
 
     print()
-"""
 
+"""
 ###8
 
 """
@@ -139,6 +152,17 @@ for i in range(5):
 
     print(end="")
 """
+
+for i in range(5):
+    for j in range(5-i):
+        # if j<6-i:
+            if i%2==0:
+                print((j+1)%2,end=" ")
+            else:
+                print(j%2,end=" ")
+
+    print()
+
 
 
 ###9
@@ -212,13 +236,15 @@ for i in range(1,7):
 
     print()
 
-
 """
 
 
 ###12
 
+"""
 for i in range(1,7):
     for j in range(1,i+1):
         print(2**j,end=" ")
     print()
+
+"""
