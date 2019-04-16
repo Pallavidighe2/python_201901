@@ -16,14 +16,14 @@
 
 # 1 LIST COMPREHENSION:
 
-_odd = list()
+# _odd = list()
 # for i in range (1,10,2):
 #     _odd.append(i)
 # print(_odd)
 #
 #
-# _odd=[i for i in range(1,10,2) ]
-# print(_odd)
+_odd=[i for i in range(1,10,2) ]
+print(_odd)
 
 # for i in range (1,10):
 #     if i%2==1:

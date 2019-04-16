@@ -21,11 +21,11 @@ vgd
 ajhdgh
 
 """
-
-print(string_variable)
-print(string_variable_2)
-print(string_variable_03)
-
+#
+# print(string_variable)
+# print(string_variable_2)
+# print(string_variable_03)
+#
 
 
 
@@ -38,10 +38,10 @@ false_flag=False
 ##None
 
 none_variable=None
-
-print("string_variable_03 ",type(string_variable_03))
-print("true_flag",type(true_flag))
-print("none_variable",type(none_variable),id(none_variable))
+#
+# print("string_variable_03 ",type(string_variable_03))
+# print("true_flag",type(true_flag))
+# print("none_variable",type(none_variable),id(none_variable))
 
 a=""
 print("a",type(a))
@@ -51,14 +51,14 @@ print("a",type(a))
 # 1 List
 
 # list_variable= [ 'Pallavi' ,'Jayshree',215445,325.125, 'Pallavi']
-print(list_variable)
-
-print(type(list_variable[0]),type(list_variable[1]), type(list_variable[2]),type(list_variable[3]))
-
-print(list_variable.index('Jayshree'))  # showing index value of jayshree in list
-
-print(len(list_variable))
-print(list_variable.count('Pallavi'))
+# print(list_variable)
+#
+# print(type(list_variable[0]),type(list_variable[1]), type(list_variable[2]),type(list_variable[3]))
+#
+# print(list_variable.index('Jayshree'))  # showing index value of jayshree in list
+#
+# print(len(list_variable))
+# print(list_variable.count('Pallavi'))
 
 integer_list=[5,2,7,3,9,8]
 print(sorted(integer_list))
