@@ -20,7 +20,7 @@ dictionary_variable = {"name":"Pallavi"
 # print(dictionary_variable.get("name"))
 # print(dictionary_variable.get("contact no" , "Key not found"))
 # print(dictionary_variable.keys())
-# print(dictionary_variable.values())
+print(dictionary_variable.values())
 # print(dictionary_variable.items())
 
 # contact_no=dictionary_variable["mobile number"]
